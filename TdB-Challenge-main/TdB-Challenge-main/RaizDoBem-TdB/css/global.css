@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Fontes */
+  --font-base: "Poppins", sans-serif;
+  --font-title: "Fredoka", sans-serif;
+
+  /*Cores*/
+  --color-black: #333;
+  --color-white: #fff;
+  --color-gray: #666;
+
+  --color-darkgreen: #006a4e;
+  --color-lightgreen: #98ca3c;
+
+  --color-gold: #e5bf6d; /* dourado */
+  --color-orange: #f78f24; /* laranja */
+  --color-cream: #fae9c6; /* bege */
+  --color-amber: #fbae17; /* amarelo âmbar */
+}
+
+/*Reset básico*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  line-height: 1.5;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+@media (min-width: 1300px) {
+  /* Cabeçalho */
+  header {
+    background-color: var(--color-cream);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+    gap: 1, 25rem;
+  }
+
+  #logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  #logo img {
+    width: 120px;
+    height: 50px;
+  }
+
+  #logo::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: #333;
+  }
+
+  #fiap {
+    margin-top: 10px;
+    width: 110px;
+    height: auto;
+  }
+
+  #nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+
+  #nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.125rem;
+  }
+
+  #nav-bar {
+    margin: 0 auto;
+  }
+
+  .nav-btn a {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: 600;
+  }
+
+  .nav-btn a:first-child {
+    margin-right: 15px;
+  }
+
+  footer {
+    background-color: var(--color-cream);
+    padding: 50px 100px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .title-footer {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: start;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .useful-link ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .navegation-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .navegation-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navegation-footer ul li{
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  .navegation-footer p {
+    padding: 5px 0;
+  }
+
+  .address {
+    width: 400px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  footer a[href^="mailto:"] {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  #logo-footer {
+    padding-top: 50px;
+    display: block;
+    width: 1030px;
+    margin: 0 auto;
+  }
+}
