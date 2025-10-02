@@ -1,0 +1,124 @@
+@media (min-width: 1300px) {
+  body {
+    background-color: var(--color-darkgreen);
+  }
+
+  main {
+    padding: 136px 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Raiz-do-Bem {
+    font-size: 4rem;
+    font-family: var(--font-title);
+    color: var(--color-white);
+    font-weight: 700;
+  }
+
+  .slogan {
+    color: var(--color-amber);
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .plataform-about {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    min-width: 610px;
+  }
+
+  /*Sobre a Raiz do Bem*/
+
+  #wrapper {
+    border-radius: 100px 100px 0 0;
+    background-color: var(--color-white);
+    height: 5000px;
+  }
+
+  .about-tdb {
+    padding: 162px 0;
+  }
+
+  #sobre-turma-do-bem {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 76px;
+  }
+
+  .container-about {
+    display: flex;
+    border-radius: 8px;
+    gap: 57px;
+    width: 1240px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--color-cream);
+    max-height: 508px;
+  }
+
+  .container-about img {
+    object-fit: cover;
+
+    margin-top: 6px;
+  }
+
+  .txt-about {
+    font-size: 1.25rem;
+    max-width: 521px;
+  }
+
+  .txt-about p:first-child {
+    margin-bottom: 20px;
+  }
+
+  .tdb-in-numbers {
+    position: relative;
+  }
+
+  .tdb-in-numbers ul {
+    margin-top: 70px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+  }
+
+  .tdb-in-numbers span {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  .tdb-in-numbers p {
+    max-width: 247px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .tdb-in-numbers ul::after {
+    content: "";
+    width: 1240px;
+    height: 5px;
+    background-color: var(--color-darkgreen);
+    position: absolute;
+    bottom: -75px;
+    border-radius: 10px;
+  }
+
+  /* Programas Tdb */
+
+  #programas-TdB {
+    margin-top: 136px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-title);
+    font-weight: bold;
+  }
+}
