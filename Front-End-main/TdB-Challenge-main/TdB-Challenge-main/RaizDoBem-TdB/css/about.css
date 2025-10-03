@@ -37,7 +37,6 @@
   #wrapper {
     border-radius: 100px 100px 0 0;
     background-color: var(--color-white);
-    height: 5000px;
   }
 
   .about-tdb {
@@ -115,10 +114,199 @@
   /* Programas Tdb */
 
   #programas-TdB {
-    margin-top: 136px;
+    padding: 136px 0;
+    width: 590px;
+    margin: 0 auto;
     text-align: center;
     font-size: 4rem;
     font-family: var(--font-title);
     font-weight: bold;
+  }
+
+  .programs {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    position: relative;
+  }
+
+  .programs div {
+    width: 573px;
+    min-height: 615px;
+    background-color: var(--color-orange);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .programs::before {
+     content: "";
+    position: absolute;
+    top: 80px;
+    left: calc(47% - 573px - 45px);
+    width: 698px;
+    height: 482px;
+    background-image: url(../assents/svgs/Union2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .programs:after {
+    content: "";
+    position: absolute;
+    top: -16%;
+    right: calc(30% - 573px / 2 - 45px);
+    width: 356.35px;
+    height: 356.35px;
+    background-image: url(../assents/svgs/Union.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .programs div img {
+    width: 522px;
+    margin-top: 25px;
+    border-radius: 8px;
+  }
+
+  .programs h4 {
+    text-align: start;
+    margin: 25px 0 25px 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-white);
+  }
+
+  .programs p {
+    text-align: start;
+    margin: 25px 0 25px 25px;
+    font-size: 1rem;
+    color: var(--color-white);
+    width: 522px;
+  }
+
+  .programs .abstract {
+    width: 573px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+  }
+
+  /*Cultura Organizacional*/
+
+  .culture {
+    margin-top: 163px;
+    background-color: var(--color-cream);
+    padding: 130px 0;
+  }
+
+  .culture h5 {
+    margin-bottom: 93px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-title);
+  }
+
+  .culture-value {
+    display: flex;
+    place-content: center;
+    text-align: center;
+    gap: 171px;
+  }
+
+  .culture-value div {
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-darkgreen);
+    place-content: center;
+    border-radius: 8px;
+    transition: all 0.1 ease-in-out;
+  }
+
+  .culture-value div:hover {
+    transform: scale(1.01);
+  }
+
+  .culture-value span {
+    font-size: 2rem;
+    color: var(--color-amber);
+    font-family: var(--font-title);
+    font-weight: 700;
+  }
+
+  .culture-value p {
+    color: var(--color-white);
+    padding: 0 25px;
+    margin-top: 20px;
+    
+  }
+
+  .culture-value ul {
+    list-style: none;
+  }
+
+  /* Sobre a Plataforma */
+
+  .more-about-plataform {
+    margin: 163px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1256px;
+    height: 508px;
+    border-radius: 12px;
+    background: var(--color-cream);
+  }
+
+  .more-about-plataform h6 {
+    text-align: start;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-family: var(--font-title);
+    color: var(--color-white);
+  }
+
+  .more-about-plataform div:first-child {
+    background-color: var(--color-darkgreen);
+    height: 508px;
+    align-content: center;
+    color: var(--color-white);
+    text-align: start;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .more-about-plataform div:first-child p {
+    margin: 20px 0 0 30px;
+    width: 563px;
+  }
+
+  .more-about-plataform div:last-child {
+    align-content: center;
+  }
+
+  .more-about-plataform div:last-child h6{
+    font-size: 2rem;
+    font-family: var(--font-title);
+    margin: 40px 0 40px 80px;
+    color: var(--color-black);
+  }
+
+  .more-about-plataform ul {
+    margin-left: 80px;
+    list-style: none;
+  }
+
+  .more-about-plataform li {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    width: 447px;
+  }
+
+  .more-about-plataform span{
+    font-weight: 700;
   }
 }
