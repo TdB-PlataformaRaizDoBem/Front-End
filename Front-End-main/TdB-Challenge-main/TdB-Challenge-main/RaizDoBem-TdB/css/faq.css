@@ -1,0 +1,118 @@
+@media (min-width: 1300px) {
+  main {
+    margin: 110px 100px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-title);
+    margin-bottom: 110px;
+    font-weight: bold;
+  }
+
+  .container-faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .container-faq h2::before,
+  .container-faq h2::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    background-color: var(--color-darkgreen);
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+
+  .container-faq details {
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    padding: 30px 0 ;
+  }
+
+  .container-faq details:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    margin-bottom: 120px;
+  }
+
+  .container-faq details summary {
+    font-weight: bold;
+    color: black;
+  }
+
+  .container-faq details p {
+    padding: 15px 0 0 0;
+  }
+
+  .container-faq summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+  }
+
+  .container-faq summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .container-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .container-faq details[open] summary::after {
+    content: "–";
+  }
+
+  /* mais dúvidas */
+
+  .contact {
+    margin: 0 100px;
+    display: flex;
+    gap: 80px;
+    place-content: center;
+    margin-bottom: 136px;
+  }
+
+  .contact div {
+    place-content: center;
+    width: 560px;
+  }
+
+  .contact div span {
+      font-size: 1.25rem;
+  }
+
+  .contact h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+
+  .contact p {
+    font-size: 1.125rem;
+  }
+
+  .contact a {
+    text-decoration: none;
+    color: var(--color-white);
+    width: 560px;
+    height: 40px;
+    background-color: var(--color-orange);
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    place-content: center;
+  }
+
+}

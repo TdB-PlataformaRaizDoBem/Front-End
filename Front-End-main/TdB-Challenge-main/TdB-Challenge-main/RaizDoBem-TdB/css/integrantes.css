@@ -1,0 +1,66 @@
+@media (min-width: 1300px) {
+  body {
+    height: 3000px;
+  }
+
+  .wrapper {
+    height: 770px;
+    position: relative;
+  }
+
+  .hero {
+    height: 770px;
+    background-color: var(--color-amber);
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%, 0 100%);
+  }
+
+  h1 {
+    text-align: center;
+    padding: 100px 0;
+    font-family: var(--font-title);
+    color: var(--color-white);
+    font-size: 6rem;
+  }
+
+  .members {
+    width: 850px;
+    height: 480px;
+    border-radius: 8px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .information-members {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: flex;
+    gap: 105px;
+    place-content: center;
+    text-align: center;
+  }
+
+  .social-midia img{
+    height: 80px;
+    width: 80px;
+    margin:  0 10px;
+    transition: all 0.2s ease-in;
+  }
+
+  .social-midia img:hover {
+    transform: scale(1.03);
+  }
+
+  span {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 15px 0;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+}
