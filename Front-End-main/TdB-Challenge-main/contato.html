@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Raiz do Bem - TdB</title>
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/contato.css">
+
+</head>
+
+<body>
+  <header>
+    <a id="logo" href="index.html" aria-label="Página inicial - Turma do Bem">
+      <img src="./assents/svgs/TDB_logo.svg" alt="Turma do Bem">
+    </a>
+    <img id="fiap" src="./assents/svgs/fiap.svg" alt="Logo Fiap">
+
+    <nav id="nav-bar" aria-label="primaria">
+      <ul>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+
+    <nav class="nav-btn" aria-label="Ações rápidas">
+      <a href="/" class="cta">Seja Voluntário</a>
+      <a href="/" class="cta">Entrar</a>
+    </nav>
+  </header>
+
+  <div class="top-section">
+    <h1>Inclusão Social Através do Sorriso</h1>
+
+    <img src="./assents/img/dentinho-duvidas.png" alt="mascote dentinho analisando uma aba web com lupa e com uma expressão de dúvidas">
+  </div>
+
+  <section class="forms-contact">
+    <h2>Precisa de Ajuda ou Tem Dúvidas? Estamos Aqui para Você</h2>
+
+    <div class="btn-forms">
+      <button type="button" id="btn-ajuda">Pedir Ajuda</button>
+      <button type="button" id="btn-duvidas">Dúvidas, reclamações ou sugestões</button>
+    </div>
+
+    <form id="form-ajuda" class="formulario">
+      <!-- Etapa 1 -->
+      <div class="form-step active" id="step1">
+
+        <label for="txtNome">Nome Completo:</label><br>
+        <input class="input-field" type="text" id="txtNome" name="txtNome" required><br>
+
+        <label for="txtCPF">CPF:</label><br>
+        <input class="input-field" type="text" id="txtCPF" name="txtCPF" required><br>
+
+        <label for="nascimento">Data de Nascimento:</label><br>
+        <input class="input-field" type="date" id="nascimento" name="nascimento" required><br>
+
+        <label for="selSexo">Sexo:</label><br>
+        <select class="input-field" id="selSexo" name="selSexo" required>
+          <option value="">Selecione</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select><br>
+
+        <label for="selGenero">Identidade de Gênero:</label><br>
+        <select class="input-field" id="selGenero" name="selGenero">
+          <option value="">Selecione</option>
+          <option value="cisgenero">Cisgênero</option>
+          <option value="trans">Transgênero</option>
+          <option value="naoBinario">Não-binário</option>
+          <option value="interSexo">Intersexo</option>
+          <option value="naoInformar">Prefiro Não Informar</option>
+        </select><br>
+
+        <label for="txtResponsavel">Nome Completo do Responsável:</label><br>
+        <input class="input-field" type="text" id="txtResponsavel" name="txtResponsavel"><br>
+
+        <label for="txtParentesco">Grau de Parentesco:</label><br>
+        <input class="input-field" type="text" id="txtParentesco" name="txtParentesco"><br>
+
+        <label for="telCelular">Celular:</label><br>
+        <input class="input-field" type="tel" id="telCelular" name="telCelular" required><br>
+
+        <label for="telTelefone">Telefone:</label><br>
+        <input class="input-field" type="tel" id="telTelefone" name="telTelefone"><br>
+
+        <label for="txtEmail">Email:</label><br>
+        <input class="input-field" type="email" id="txtEmail" name="txtEmail" required><br>
+
+        <label for="txtCEP">CEP:</label><br>
+        <input class="input-field" type="text" name="txtCEP" id="txtCEP" required><br>
+
+        <label for="txtCidade">Cidade:</label><br>
+        <input class="input-field" type="text" id="txtCidade" name="txtCidade" required><br>
+
+        <label for="estado">Estado:</label><br>
+        <input class="input-field" type="text" id="estado" name="estado" required><br>
+
+        <button type="button" id="btn-proxima-etapa">Próxima Etapa</button>
+      </div>
+
+      <!-- Etapa 2 -->
+      <div class="form-step" id="step2">
+        <h2>Informações sobre sua Saúde Bucal</h2>
+        <p>Essas informações ajudam nossa equipe a entender melhor sua situação.</p>
+
+        <label for="acompanhamento">Você já possui acompanhamento odontológico?</label><br>
+        <select class="input-field" id="acompanhamento" name="acompanhamento" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select><br>
+
+        <label for="dificuldades">Principais dificuldades ou problemas percebidos:</label><br>
+        <input class="input-field" type="text" id="dificuldades" name="dificuldades" placeholder="Ex: dor, sensibilidade, sangramento..." required><br>
+
+        <label for="tempo">Há quanto tempo sente esses problemas?</label><br>
+        <select class="input-field" id="tempo" name="tempo" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="menos1">Menos de 1 ano</option>
+          <option value="1a3">1–3 anos</option>
+          <option value="mais3">Mais de 3 anos</option>
+        </select><br>
+
+        <fieldset class="impacto">
+          <legend>Impacto na vida diária:</legend><br>
+          <label><input type="checkbox" name="impacto[]" value="dor"> Dor</label><br>
+          <label><input type="checkbox" name="impacto[]" value="alimentacao"> Dificuldade para se alimentar</label><br>
+          <label><input type="checkbox" name="impacto[]" value="estetica"> Estética / Autoestima</label><br>
+          <label><input type="checkbox" name="impacto[]" value="fala"> Dificuldade para falar</label><br>
+        </fieldset>
+
+        <h3>Envie suas fotos</h3>
+
+        <label for="foto-rosto">Foto do rosto sorrindo (frontal):</label><br>
+        <input class="input-field" type="file" id="foto-rosto" name="foto_rosto" accept="image/*"><br>
+
+        <label for="foto-boca">Foto intraoral (dentes visíveis):</label><br>
+        <input class="input-field" type="file" id="foto-boca" name="foto_boca" accept="image/*"><br>
+
+        <label for="origem">Como conheceu a Turma do Bem?</label><br>
+        <select class="input-field" id="origem" name="origem" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="indicacao">Indicação</option>
+          <option value="escola">Escola</option>
+          <option value="redes">Redes Sociais</option>
+          <option value="outro">Outro</option>
+        </select><br>
+
+        <label for="mensagem2">Mensagem opcional:</label><br>
+        <textarea class="input-field" id="mensagem2" name="mensagem2" rows="4" placeholder="Conte um pouco sobre sua situação, se quiser."></textarea><br>
+
+        <div class="btns">
+          <button type="button" class="btn-voltar" id="btn-voltar">Voltar</button>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Formulário Dúvidas, Reclamações ou Sugestões -->
+    <form id="form-duvidas" class="formulario">
+      <label for="nome-duvidas">Nome Completo:</label>
+      <input type="text" id="nome-duvidas" name="nome-duvidas" required>
+
+      <label for="email-duvidas">Email:</label>
+      <input type="email" id="email-duvidas" name="email-duvidas" required>
+
+      <label for="mensagem-duvidas">Mensagem:</label>
+      <textarea id="mensagem-duvidas" name="mensagem-duvidas" rows="4" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <script src="./js/formsContact.js"></script>
+</body>
+
+</html>
