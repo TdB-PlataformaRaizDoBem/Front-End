@@ -3,17 +3,26 @@ const btnDuvidas = document.getElementById("btn-duvidas");
 const formAjuda = document.getElementById("form-ajuda");
 const formDuvidas = document.getElementById("form-duvidas");
 
-btnAjuda.addEventListener("click", () => {
-  formAjuda.style.display = "block";
+formDuvidas.style.display = "none";
+
+// Função para exibir formulário
+function mostrarFormulario(form) {
+  formAjuda.style.display = "none";
   formDuvidas.style.display = "none";
+  form.style.display = "grid";
+}
+
+// Trocando o formulário
+btnAjuda.addEventListener("click", () => {
+  mostrarFormulario(formAjuda);
 });
 
 btnDuvidas.addEventListener("click", () => {
-  formDuvidas.style.display = "block";
-  formAjuda.style.display = "none";
+  mostrarFormulario(formDuvidas);
 });
 
-// Controle de etapas dentro do formulário de ajuda
+
+// Troca de etapa no formulario de ajuda
 const btnProximaEtapa = document.getElementById("btn-proxima-etapa");
 const btnVoltar = document.getElementById("btn-voltar");
 const step1 = document.getElementById("step1");
