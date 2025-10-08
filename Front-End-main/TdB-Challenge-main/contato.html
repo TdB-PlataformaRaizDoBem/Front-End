@@ -52,90 +52,145 @@
     </div>
 
     <form id="form-ajuda" class="formulario">
-      <!-- Nome Completo -->
-      <div class="input-solo">
-        <label for="txtNome">Nome Completo:</label>
-        <input type="text" id="txtNome" name="txtNome" required>
+      <!-- ETAPA 1 -->
+      <div class="form-step active" id="step1">
+        <div class="input-solo">
+          <label for="txtNome">Nome Completo:</label>
+          <input type="text" id="txtNome" name="txtNome" required>
+        </div>
+
+        <div class="input-duo">
+          <label for="txtCPF">CPF:</label>
+          <input type="text" id="txtCPF" name="txtCPF" required>
+        </div>
+        <div class="input-duo">
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+        </div>
+
+        <div class="input-duo">
+          <label for="selSexo">Sexo:</label>
+          <select id="selSexo" name="selSexo" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="input-duo">
+          <label for="selGenero">Identidade de Gênero:</label>
+          <select id="selGenero" name="selGenero">
+            <option value="">Selecione</option>
+            <option value="cisgenero">Cisgênero</option>
+            <option value="trans">Transgênero</option>
+            <option value="naoBinario">Não-binário</option>
+            <option value="interSexo">Intersexo</option>
+            <option value="naoInformar">Prefiro Não Informar</option>
+          </select>
+        </div>
+
+        <div class="input-solo">
+          <label for="txtResponsavel">Nome Completo do Responsável:</label>
+          <input type="text" id="txtResponsavel" name="txtResponsavel">
+        </div>
+
+        <div class="input-duo">
+          <label for="txtParentesco">Grau de Parentesco:</label>
+          <input type="text" id="txtParentesco" name="txtParentesco">
+        </div>
+        <div class="input-duo">
+          <label for="telCelular">Celular:</label>
+          <input type="tel" id="telCelular" name="telCelular" required>
+        </div>
+
+        <div class="input-duo">
+          <label for="telTelefone">Telefone:</label>
+          <input type="tel" id="telTelefone" name="telTelefone">
+        </div>
+
+        <div class="input-solo">
+          <label for="txtEmail">Email:</label>
+          <input type="email" id="txtEmail" name="txtEmail" required>
+        </div>
+
+        <div class="input-solo">
+          <label for="txtCEP">CEP:</label>
+          <input type="text" id="txtCEP" name="txtCEP" required>
+        </div>
+
+        <div class="input-duo">
+          <label for="txtCidade">Cidade:</label>
+          <input type="text" id="txtCidade" name="txtCidade" required>
+        </div>
+        <div class="input-duo">
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" required>
+        </div>
+
+        <div class="input-solo btns">
+          <button type="button" id="btn-proxima-etapa">Próxima Etapa</button>
+        </div>
       </div>
 
-      <!-- CPF e Data de Nascimento lado a lado -->
-      <div class="input-duo">
-        <label for="txtCPF">CPF:</label>
-        <input type="text" id="txtCPF" name="txtCPF" required>
-      </div>
-      <div class="input-duo">
-        <label for="nascimento">Data de Nascimento:</label>
-        <input type="date" id="nascimento" name="nascimento" required>
-      </div>
+      <div class="form-step" id="step2">
 
-      <!-- Sexo e Identidade de Gênero lado a lado -->
-      <div class="input-duo">
-        <label for="selSexo">Sexo:</label>
-        <select id="selSexo" name="selSexo" required>
-          <option value="">Selecione</option>
-          <option value="masculino">Masculino</option>
-          <option value="feminino">Feminino</option>
-          <option value="outro">Outro</option>
-        </select>
-      </div>
-      <div class="input-duo">
-        <label for="selGenero">Identidade de Gênero:</label>
-        <select id="selGenero" name="selGenero">
-          <option value="">Selecione</option>
-          <option value="cisgenero">Cisgênero</option>
-          <option value="trans">Transgênero</option>
-          <option value="naoBinario">Não-binário</option>
-          <option value="interSexo">Intersexo</option>
-          <option value="naoInformar">Prefiro Não Informar</option>
-        </select>
-      </div>
+        <div class="input-solo">
+          <label for="acompanhamento">Você já possui acompanhamento odontológico?</label>
+          <select id="acompanhamento" name="acompanhamento" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
 
-      <!-- Nome do responsável -->
-      <div class="input-solo">
-        <label for="txtResponsavel">Nome Completo do Responsável:</label>
-        <input type="text" id="txtResponsavel" name="txtResponsavel">
-      </div>
+        <div class="input-solo">
+          <label for="dificuldades">Principais dificuldades ou problemas percebidos:</label>
+          <input type="text" id="dificuldades" name="dificuldades" placeholder="Ex: dor, sensibilidade, sangramento..." required>
+        </div>
 
-      <!-- Grau de parentesco e telefone -->
-      <div class="input-duo">
-        <label for="txtParentesco">Grau de Parentesco:</label>
-        <input type="text" id="txtParentesco" name="txtParentesco">
-      </div>
-      <div class="input-duo">
-        <label for="telCelular">Celular:</label>
-        <input type="tel" id="telCelular" name="telCelular" required>
-      </div>
+        <div class="input-solo">
+          <label for="tempo">Há quanto tempo sente esses problemas?</label>
+          <select id="tempo" name="tempo" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="menos1">Menos de 1 ano</option>
+            <option value="1a3">1–3 anos</option>
+            <option value="mais3">Mais de 3 anos</option>
+          </select>
+        </div>
 
-      <div class="input-duo">
-        <label for="telTelefone">Telefone:</label>
-        <input type="tel" id="telTelefone" name="telTelefone">
-      </div>
+        <div class="input-solo">
+          <label for="foto-rosto">Foto do rosto sorrindo (frontal):</label>
+          <input type="file" id="foto-rosto" name="foto_rosto" accept="image/*">
+        </div>
 
-      <!-- Email -->
-      <div class="input-solo">
-        <label for="txtEmail">Email:</label>
-        <input type="email" id="txtEmail" name="txtEmail" required>
-      </div>
+        <div class="input-solo">
+          <label for="foto-boca">Foto intraoral (dentes visíveis):</label>
+          <input type="file" id="foto-boca" name="foto_boca" accept="image/*">
+        </div>
 
-      <!-- CEP -->
-      <div class="input-solo">
-        <label for="txtCEP">CEP:</label>
-        <input type="text" id="txtCEP" name="txtCEP" required>
-      </div>
+        <div class="input-solo">
+          <label for="origem">Como conheceu a Turma do Bem?</label>
+          <select id="origem" name="origem" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="indicacao">Indicação</option>
+            <option value="escola">Escola</option>
+            <option value="redes">Redes Sociais</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
 
-      <!-- Cidade e Estado lado a lado -->
-      <div class="input-duo">
-        <label for="txtCidade">Cidade:</label>
-        <input type="text" id="txtCidade" name="txtCidade" required>
-      </div>
-      <div class="input-duo">
-        <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado" required>
-      </div>
+        <div class="input-solo">
+          <label for="mensagem2">Mensagem opcional:</label>
+          <textarea id="mensagem2" name="mensagem2" rows="4" placeholder="Conte um pouco sobre sua situação, se quiser."></textarea>
+        </div>
 
-      <!-- Botão enviar -->
-      <button type="submit">Enviar</button>
+        <div class="input-solo btns">
+          <button type="button" class="btn-voltar" id="btn-voltar">Voltar</button>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </div>
+      </div>
     </form>
+
 
     <form id="form-duvidas" class="formulario">
       <div class="input-solo">

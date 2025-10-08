@@ -37,10 +37,7 @@
   }
 
   /* Forms*/
-  form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  .formulario {
     background: var(--color-darkgreen);
     width: 860px;
     padding: 40px;
@@ -49,16 +46,31 @@
     box-sizing: border-box;
   }
 
+  /* Faz cada etapa usar grid separadamente */
+  .form-step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Somente o botão ocupará toda largura */
+  form button {
+    grid-column: 1 / -1;
+    margin: 20px auto 0 auto;
+  }
+
+  /* Campos solo ocupam 100% da largura */
   .input-solo {
     grid-column: 1 / -1;
   }
 
+  /* Campos duo ficam lado a lado */
   .input-duo {
     width: 100%;
   }
 
   label {
-    color:var(--color-white);
+    color: var(--color-white);
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
@@ -94,13 +106,13 @@
     transform: scale(1.03);
   }
 
-  .btn-forms button{
+  .btn-forms button {
     width: 410px;
   }
 
-  form button {
-    grid-column: 1 / -1;
-    margin: 20px auto 0 auto;
+  .btns {
+    display: flex;
+    place-content: center;
   }
 
   .forms-contact {
@@ -124,8 +136,10 @@
   }
 
   .form-step.active {
-    display: block;
+    display: grid;
     animation: fadeIn 0.5s ease;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
   @keyframes fadeIn {
