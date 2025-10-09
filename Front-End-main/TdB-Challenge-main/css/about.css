@@ -6,9 +6,8 @@
   main {
     padding: 136px 100px;
     display: flex;
-    gap: 50px;
     align-items: center;
-    justify-content: center;
+    place-content: center;
   }
 
   #Raiz-do-Bem {
@@ -29,7 +28,14 @@
   .plataform-about {
     color: var(--color-white);
     font-size: 1.2rem;
-    min-width: 610px;
+    min-width: 410px;
+    max-width: 610px;
+  }
+
+  main img {
+    min-width: 450px;
+    background-size: cover;
+    z-index: -1;
   }
 
   /*Sobre a Raiz do Bem*/
@@ -141,7 +147,7 @@
   }
 
   .programs::before {
-     content: "";
+    content: "";
     position: absolute;
     top: 80px;
     left: calc(47% - 573px - 45px);
@@ -241,7 +247,6 @@
     color: var(--color-white);
     padding: 0 25px;
     margin-top: 20px;
-    
   }
 
   .culture-value ul {
@@ -287,7 +292,7 @@
     align-content: center;
   }
 
-  .more-about-plataform div:last-child h6{
+  .more-about-plataform div:last-child h6 {
     font-size: 2rem;
     font-family: var(--font-title);
     margin: 40px 0 40px 80px;
@@ -306,7 +311,7 @@
     width: 447px;
   }
 
-  .more-about-plataform span{
+  .more-about-plataform span {
     font-weight: 700;
   }
 }
