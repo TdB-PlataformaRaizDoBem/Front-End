@@ -82,7 +82,7 @@ As cores e tipografia foram pensadas para transmitir **esperança, inclusão e i
 O projeto faz parte da iniciativa acadêmica vinculada à instituição **FIAP** e à ONG **Turma do Bem**, dentro do desafio **TdB Challenge**.
 
 📁 **Repositório da Organização:**  
-[🔗 Inserir link da organização aqui](#)
+[🔗 https://github.com/TdB-PlataformaRaizDoBem](https://github.com/TdB-PlataformaRaizDoBem)
 
 📁 **Repositório deste Projeto (Front-End):**  
 [🔗 https://github.com/TdB-PlataformaRaizDoBem/Front-End](https://github.com/TdB-PlataformaRaizDoBem/Front-End)
@@ -92,7 +92,7 @@ O projeto faz parte da iniciativa acadêmica vinculada à instituição **FIAP**
 ## 🚀 Deploy
 
 🔗 **Acesse o site no ar:**  
-[👉 Inserir link do site aqui](#)
+[👉 https://tdb-plataformaraizdobem.github.io/Front-End/](https://tdb-plataformaraizdobem.github.io/Front-End/)
 
 ---
 
