@@ -171,7 +171,7 @@ body {
   }
 
   footer a[href^="mailto:"] {
-    color: blue;
+    color: var(--color-black);
     text-decoration: underline;
   }
 
@@ -180,5 +180,10 @@ body {
     display: block;
     width: 1030px;
     margin: 0 auto;
+  }
+
+  .end p{
+    margin-top: 80px;
+    text-align: center;
   }
 }

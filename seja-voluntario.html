@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Raiz do Bem - TdB</title>
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/voluntario.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div>
+        <a id="logo" href="index.html" aria-label="Página inicial - Turma do Bem">
+          <img src="./assents/svgs/TDB_logo.svg" alt="Turma do Bem">
+        </a>
+        <img id="fiap" src="./assents/svgs/fiap.svg" alt="Logo Fiap">
+      </div>
+
+      <a class="btn-back" href="./index.html">Voltar</a>
+    </header>
+
+    <main>
+      <div>
+        <h1>Seja um Dentista Voluntário</h1>
+        <p>Ser voluntário na Turma do Bem é muito mais do que doar seu tempo — é plantar cuidado, empatia e esperança em cada sorriso que nasce de um gesto simples, mas transformador.</p>
+        <a href="#form">Cadastre-se</a>
+      </div>
+
+      <img src="./assents/img/dentistaConfiante.png" alt="Dentista de cabelos crespos e pele preta, usando um jaleco branco, braços cruzados com a cabeça levemente erguida para a direira e um sorriso no rosto">
+    </main>
+
+    <article id="form" aria-label="formulário-para-cadastro">
+      <form action="">
+        <div class="personal_information" aria-labelledby="informacoes-pessoais">
+          <h2 id="informacoes-pessoais">INFORMAÇÕES PESSOAIS</h2>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtNome">Nome Completo:</label>
+              <input type="text" id="txtNome" name="txtNome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="group">
+              <label for="txtNomeSocial">Como Gostaria de Ser Chamado:</label>
+              <input type="text" id="txtNomeSocial" name="txtNomeSocial" placeholder="Digite como gostaria de ser chamado" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="DataNascimento">Data de Nascimento</label>
+              <input type="date" id="DataNascimento" name="DataNascimento" required>
+            </div>
+            <div class="group">
+              <label for="txtCPF">CPF: (Apenas os números)</label>
+              <input type="text" name="txtCPF" id="txtCPF" placeholder="Digite apenas os números do CPF " required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtRG">RG: (Apenas números)</label>
+              <input type="text" id="txtRG" name="txtRG" placeholder="Digite seu RG:" required>
+            </div>
+            <div class="group">
+              <label for="txtEmail">Email:</label>
+              <input type="email" id="txtEmail" name="txtEmail" placeholder="Digite seu email:" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtRG">RG: (Apenas números)</label>
+              <input type="text" id="txtRG" name="txtRG" placeholder="Digite seu RG:" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="address_information" aria-labelledby="endereco-residencial">
+          <h2 id="endereco-residencial">ENDEREÇO RESIDENCIAL</h2>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtEnderecoResidencial">Endereço:</label>
+              <input type="text" id="txtEnderecoResidencial" name="txtEnderecoResidencial" placeholder="Rua, avenida, etc." required>
+            </div>
+            <div class="group">
+              <label for="txtNumeroResidencial">Número:</label>
+              <input type="text" id="txtNumeroResidencial" name="txtNumeroResidencial" placeholder="Número" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtBairroResidencial">Bairro:</label>
+              <input type="text" id="txtBairroResidencial" name="txtBairroResidencial" placeholder="Digite seu bairro" required>
+            </div>
+            <div class="group">
+              <label for="txtCidadeResidencial">Cidade:</label>
+              <input type="text" id="txtCidadeResidencial" name="txtCidadeResidencial" placeholder="Digite sua cidade" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtEstadoResidencial">Estado:</label>
+              <input type="text" id="txtEstadoResidencial" name="txtEstadoResidencial" placeholder="Digite seu estado" required>
+            </div>
+            <div class="group">
+              <label for="txtCEPResidencial">CEP:</label>
+              <input type="text" id="txtCEPResidencial" name="txtCEPResidencial" placeholder="00000-000" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="selPais">
+                <select name="selPais" id="selPais" required>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Brasil">Brasil</option>
+                  <option value="Bolivia">Bolívia</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Colombia">Colômbia</option>
+                  <option value="Equador">Equador</option>
+                  <option value="Mexico">México</option>
+                  <option value="Uruguai">Uruguai</option>
+                  <option value="Panama">Panamá</option>
+                  <option value="Paraguai">Paraguai</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Portugal">Portugal</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinic_information" aria-labelledby="endereco-clinica">
+          <h2 id="endereco-clinica">ENDEREÇO DA CLÍNICA / CONSULTÓRIO</h2>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtEnderecoClinica">Endereço:</label>
+              <input type="text" id="txtEnderecoClinica" name="txtEnderecoClinica" placeholder="Rua, avenida, etc." required>
+            </div>
+            <div class="group">
+              <label for="txtNumeroClinica">Número:</label>
+              <input type="text" id="txtNumeroClinica" name="txtNumeroClinica" placeholder="Número" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtBairroClinica">Bairro:</label>
+              <input type="text" id="txtBairroClinica" name="txtBairroClinica" placeholder="Digite o bairro" required>
+            </div>
+            <div class="group">
+              <label for="txtCidadeClinica">Cidade:</label>
+              <input type="text" id="txtCidadeClinica" name="txtCidadeClinica" placeholder="Digite a cidade" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtEstadoClinica">Estado:</label>
+              <input type="text" id="txtEstadoClinica" name="txtEstadoClinica" placeholder="Digite o estado" required>
+            </div>
+            <div class="group">
+              <label for="txtCEPClinica">CEP:</label>
+              <input type="text" id="txtCEPClinica" name="txtCEPClinica" placeholder="00000-000" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtTelefoneComercial">Telefone Comercial:</label>
+              <input type="tel" id="txtTelefoneComercial" name="txtTelefoneComercial" placeholder="(XX) XXXX-XXXX" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="professional_information" aria-labelledby="informacoes-profissionais">
+          <h2 id="informacoes-profissionais">INFORMAÇÕES PROFISSIONAIS</h2>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtCRO">CRO:</label>
+              <input type="text" id="txtCRO" name="txtCRO" placeholder="Digite seu registro profissional" required>
+            </div>
+            <div class="group">
+              <label for="txtEspecialidade">Especialidade(s):</label>
+              <input type="text" id="txtEspecialidade" name="txtEspecialidade" placeholder="Digite sua(s) especialidade(s)" required>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="txtIndicacao">Foi indicado por alguém? Se sim, quem?</label>
+              <input type="text" id="txtIndicacao" name="txtIndicacao" placeholder="Digite o nome da pessoa que indicou">
+            </div>
+          </div>
+        </div>
+
+        <div class="volunteer_preferences" aria-labelledby="preferencias-voluntariado">
+          <h2 id="preferencias-voluntariado">PREFERÊNCIAS DE VOLUNTARIADO</h2>
+          <div class="input-duo">
+            <div class="group">
+              <label for="tipoAtuacao">Você deseja:</label>
+              <select id="tipoAtuacao" name="tipoAtuacao" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="consultorio">Apenas atender no seu consultório</option>
+                <option value="triagem">Apenas realizar triagens</option>
+                <option value="ambos">Atender no consultório e realizar triagens</option>
+              </select>
+            </div>
+
+            <div class="group">
+              <label for="publicoAtendido">Qual público deseja receber em seu consultório:</label>
+              <select id="publicoAtendido" name="publicoAtendido" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="criancas_adolescentes">Apenas crianças e adolescentes (11 a 17 anos)</option>
+                <option value="mulheres">Apenas mulheres adultas cis ou trans vítimas de violência</option>
+                <option value="ambos">Ambos</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-duo">
+            <div class="group">
+              <label for="qtdCriancas">Quantas crianças/jovens deseja atender:</label>
+              <input type="number" id="qtdCriancas" name="qtdCriancas" min="0" placeholder="Ex: 5" required>
+            </div>
+            <div class="group">
+              <label for="qtdMulheres">Quantas mulheres deseja atender:</label>
+              <input type="number" id="qtdMulheres" name="qtdMulheres" min="0" placeholder="Ex: 5" required>
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="txtObservacao">Observações:</label>
+            <textarea id="txtObservacao" name="txtObservacao" placeholder="Digite alguma observação adicional"></textarea>
+          </div>
+        </div>
+
+        <div class="input-duo">
+          <a href="index.html">Voltar Para A Página Inicial</a>
+          <button type="submit">Enviar Dados</button>
+        </div>
+      </form>
+    </article>
+  </div>
+  <footer aria-label="rodapé">
+    <div class="footer-container">
+      <section class="useful-link" aria-labelledby="social-midia">
+        <nav>
+          <span class="title-footer" id="social-midia">Redes Sociais</span>
+          <ul>
+            <li><a href="https://www.facebook.com/turmadobem/?locale=pt_BR"><img src="./assents/svgs/ic_baseline-facebook.png" alt="facebook"></a></li>
+            <li><a href="https://x.com/turmadobem"><img src="./assents/svgs/X.svg" alt="X"></a></li>
+            <li><a href="https://www.instagram.com/ongturmadobem/"><img src="./assents/svgs/mdi_instagram.svg" alt="instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/turma-do-bem/?originalSubdomain=br"><img src="./assents/svgs/mdi_linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="https://www.youtube.com/fabiobibancos"><img src="./assents/svgs/mdi_youtube.png" alt="youtube"></a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="navegation-footer">
+        <div>
+          <span class="title-footer">Tome uma Atitude</span>
+          <nav>
+            <ul>
+              <li><a href="/">Doar</a></li>
+              <li><a href="./seja-voluntario.html">Seja Voluntário</a></li>
+              <li><a href="./contato.html">Preciso de Ajuda</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <span class="title-footer">Sobre Nós</span>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./about.html">Nossa História</a></li>
+              <li><a href="./integrantes.html">Integrantes</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <span class="title-footer">Contato</span>
+          <p>Fone: 55 11 5084-7276</p>
+          <p class="address">Rua Maurício Francisco Klabin, 449 - Vila Mariana, São Paulo - SP, 04120-020</p>
+          <nav>
+            <ul>
+              <li>
+                <span>Presidente</span>
+                <br>
+                <a href="mailto:turmadobem@tdb.org.br">turmadobem@tdb.org.br</a>
+              </li>
+              <li>
+                <span>Comunicação</span>
+                <br>
+                <a href="mailto:comunicacao@tdb.org.br">comunicacao@tdb.org.br</a>
+              </li>
+              <li>
+                <span>Dúvidas, Críticas ou Sugestões :</span>
+                <br>
+                <a href="mailto:faleconosco@tdb.org.br">faleconosco@tdb.org.br</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <img id="logo-footer" src="./assents/svgs/TDB_logo.svg" alt="Turma do Bem Logo">
+
+    <div class="end">
+      <p>© 2025 Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+
+</html>
