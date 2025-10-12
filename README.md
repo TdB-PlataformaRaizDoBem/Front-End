@@ -36,17 +36,17 @@ Unindo design acessível e propósito social, o projeto busca:
 
 Front-End/
   TdB-PlataformaRaizDoBem/
-    - `index.html` — Página inicial  
-    - `about.html` — Sobre a plataforma e a TdB  
-    - `integrantes.html` — Equipe de desenvolvimento  
-    - `faq.html` — Perguntas frequentes  
-    - `contato.html` — Página de contato e formulários de pedidos de ajuda  
-    - `seja-voluntario.html` — Página destinada ao futuros dentistas voluntários que desejam se inscrever
-    - `login.html` — Página de login para o usuário
+    - `index.html` — Página inicial    
+    - `about.html` — Sobre a plataforma e a TdB    
+    - `integrantes.html` — Equipe de desenvolvimento    
+    - `faq.html` — Perguntas frequentes    
+    - `contato.html` — Página de contato e formulários de pedidos de ajuda    
+    - `seja-voluntario.html` — Página destinada ao futuros dentistas voluntários que desejam se inscrever  
+    - `login.html` — Página de login para o usuário    
     - `homeCoordenador.html` — tela inicial pós login para os coordenadores  
-    - `homeAdmin.html` — tela inicial pós login para os Administradores
-    - `homeDentista.html` — tela inicial pós login para os dentistas voluntários
-    - `homeBeneficiario.html` — tela inicial pós login para os beneficiários do programa TdB  
+    - `homeAdmin.html` — tela inicial pós login para os Administradores  
+    - `homeDentista.html` — tela inicial pós login para os dentistas voluntários  
+    - `homeBeneficiario.html` — tela inicial pós login para os beneficiários do programa TdB   
 
     **Diretórios internos:**
     - **css/** → estilos globais e páginas específicas  
@@ -76,10 +76,10 @@ As cores e tipografia foram pensadas para transmitir **esperança, inclusão e i
 
 ## 👥 Equipe de Desenvolvimento
 
-| Integrantes:
-| **Renan Paulino**
-| **Murilo Ayabe** 
-| **Paulo Cavalcante**
+| Integrantes:  
+| **Renan Paulino**  
+| **Murilo Ayabe**   
+| **Paulo Cavalcante**  
 
 ---
 
