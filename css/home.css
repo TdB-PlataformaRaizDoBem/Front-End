@@ -73,6 +73,11 @@
     padding: 10px 80px;
     background: var(--color-orange);
     border-radius: 8px;
+    transition: all 0.3s;
+  }
+
+  .information a:hover {
+    background: #e07c1c;
   }
 
   .donate nav ul {

@@ -1,0 +1,15 @@
+@media (min-width: 1300px) {
+
+  main div {
+    width: 480px;
+    height: 350px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    place-content: center;
+  }
+
+  main div p {
+   text-align: center;
+  }
+}
