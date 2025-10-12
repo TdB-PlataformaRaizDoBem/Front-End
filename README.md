@@ -40,7 +40,13 @@ Front-End/
     - `about.html` — Sobre a plataforma e a TdB  
     - `integrantes.html` — Equipe de desenvolvimento  
     - `faq.html` — Perguntas frequentes  
-    - `contato.html` — Página de contato e formulários  
+    - `contato.html` — Página de contato e formulários de pedidos de ajuda  
+    - `seja-voluntario.html` — Página destinada ao futuros dentistas voluntários que desejam se inscrever
+    - `login.html` — Página de login para o usuário
+    - `homeCoordenador.html` — tela inicial pós login para os coordenadores  
+    - `homeAdmin.html` — tela inicial pós login para os Administradores
+    - `homeDentista.html` — tela inicial pós login para os dentistas voluntários
+    - `homeBeneficiario.html` — tela inicial pós login para os beneficiários do programa TdB  
 
     **Diretórios internos:**
     - **css/** → estilos globais e páginas específicas  
@@ -55,7 +61,7 @@ O design segue uma linguagem acolhedora e empática, com destaque para o mascote
 As cores e tipografia foram pensadas para transmitir **esperança, inclusão e impacto social positivo**.
 
 📘 **Link do protótipo no Figma:**  
-[🔗 Inserir link do Figma aqui](#)
+[🔗 https://www.figma.com/proto/PXxoRDmkhZU9yVuq7ksPSD/Turma-do-Bem?node-id=1-2&t=5On8ArgGm21C4ZNu-1&starting-point-node-id=1%3A2](#https://www.figma.com/proto/PXxoRDmkhZU9yVuq7ksPSD/Turma-do-Bem?node-id=1-2&t=5On8ArgGm21C4ZNu-1&starting-point-node-id=1%3A2)
 
 ---
 
