@@ -31,20 +31,47 @@
       </ul>
     </nav>
 
-
     <nav class="nav-btn" aria-label="Ações rápidas">
       <a href="seja-voluntario.html" class="cta">Seja Voluntário</a>
       <a href="login.html" class="cta">Entrar</a>
+    </nav>
+
+    <!-- Menu Mobile -->
+     <div class="logos">
+      <a id="logo_mobile" href="index.html" aria-label="Página inicial - Turma do Bem">
+        <img src="./assents/svgs/TDB_logo.svg" alt="Turma do Bem">
+      </a>
+      <span class="separator"></span>
+      <img id="fiap_mobile" src="./assents/svgs/fiap.svg" alt="Logo Fiap">
+    </div>
+
+    <button class="menu-icon" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+      <img src="./assents/svgs/menu_hamburguer.svg" alt="Menu">
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Menu móvel">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="./integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <div class="nav-btn-mobile">
+        <a href="seja-voluntario.html" class="cta">Seja Voluntário</a>
+        <a href="login.html" class="cta">Entrar</a>
+      </div>
     </nav>
   </header>
 
   <section class="hero"></section>
 
-  <main aria-labelledby="titulo-principal">
+  <main class="main-home" aria-labelledby="titulo-principal">
     <h1 id="titulo-principal">
       Inclusão Social Através do <span>Sorriso</span>
     </h1>
-
+ 
     <section class="container-main" aria-labelledby="Doar">
 
       <div class="information">
@@ -142,7 +169,7 @@
   <article class="section-review" aria-labelledby="review"">
     <h3 id= "review">Movidos por Sorrisos</h3>
     <section>
-      <button><img src="./assents/svgs/btn-next.svg"></button>
+      <button class="btn-next"><img src="./assents/svgs/btn-next.svg"></button>
       <div class="card-review">
         <img src="./assents/img/people-review1.png" alt="Mulher parda com cabelos ondulados loiro">
 
@@ -153,7 +180,7 @@
           <figcaption>Larissa Tavares Costa</figcaption>
         </figure>
       </div>
-      <button><img src="./assents/svgs/btn-next.svg"></button>
+      <button class="btn-next"><img src="./assents/svgs/btn-next.svg"></button>
     </section>
   </article>
 
@@ -241,9 +268,11 @@
     <img id="logo-footer" src="./assents/svgs/TDB_logo.svg" alt="Turma do Bem Logo">
 
     <div class="end">
-    <p>© 2025 Todos os direitos reservados</p>
+      <p>© 2025 Todos os direitos reservados</p>
     </div>
   </footer>
+
+  <script src="./js/global.js"></script>
 </body>
 
 </html>

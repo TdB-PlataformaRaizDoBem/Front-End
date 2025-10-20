@@ -1,147 +1,434 @@
-@media (min-width: 1300px) {
-  /* Cabeçalho */
-  header {
-    background-color: var(--color-cream);
-    height: 100px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 5vw;
-    gap: 1, 25rem;
-  }
+/* Cabeçalho */
+header {
+  background-color: var(--color-cream);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+  gap: 1.25rem;
+}
 
+#logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#logo img {
+  width: 120px;
+  height: 50px;
+}
+
+#logo::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 50px;
+  margin: 0 20px;
+  background-color: #333;
+}
+
+#fiap {
+  margin-top: 10px;
+  width: 110px;
+  height: auto;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.125rem;
+}
+
+#nav-bar {
+  margin: 0 auto;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-btn a:hover {
+  background-color: #e07c1c;
+}
+
+.nav-btn a:first-child {
+  margin-right: 15px;
+}
+
+.nav-btn-mobile {
+  display: flex;
+  place-content: center;
+  gap: 30px;
+}
+
+.nav-btn-mobile a {
+  padding: 10px 20px;
+  background-color: var(--color-orange);
+  border-radius: 8px;
+}
+
+.menu-mobile {
+  display: flex;
+  background-color: var(--color-darkgreen);
+  transition: all 0.3s ease-in;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100vw;
+  text-align: center;
+  padding: 2rem 0;
+  z-index: 10;
+}
+
+.menu-mobile.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.menu-mobile.active li {
+  margin: 20px 0;
+}
+
+.menu-mobile.active a {
+  color: var(--color-white);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu-icon,
+.menu-mobile,
+.logos,
+.menu-mobile.active {
+  display: none;
+}
+
+footer {
+  background-color: var(--color-cream);
+  padding: 50px 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.title-footer {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: start;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.useful-link ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.navegation-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.navegation-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navegation-footer ul li {
+  padding: 5px 0;
+  margin: 0;
+}
+
+.navegation-footer p {
+  padding: 5px 0;
+}
+
+.address {
+  width: 400px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a[href^="mailto:"] {
+  color: var(--color-black);
+  text-decoration: underline;
+}
+
+#logo-footer {
+  padding-top: 50px;
+  display: block;
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.end p {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+  #nav-bar,
+  .nav-btn,
+  #fiap,
   #logo {
+    display: none;
+  }
+
+  header {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    height: 80px;
+  }
+  .menu-icon {
+    display: flex;
+    max-width: 30px;
+    max-height: 30px;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
   }
 
-  #logo img {
-    width: 120px;
-    height: 50px;
+  .logos {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
   }
 
-  #logo::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 50px;
-    margin: 0 20px;
-    background-color: #333;
-  }
-
-  #fiap {
-    margin-top: 10px;
-    width: 110px;
+  .logos #logo_mobile img {
+    max-width: 100px;
     height: auto;
   }
+  .logos #fiap_mobile {
+    margin-top: 8px;
+    max-width: 100px;
+  }
 
-  #nav-bar ul {
-    list-style: none;
+  .separator {
+    width: 1px;
+    height: 45px;
+    background-color: var(--color-black);
+    margin: 0 10px;
+    margin-top: 8px;
+  }
+
+  .menu-mobile.active {
     display: flex;
-    gap: 40px;
-  }
-
-  #nav-bar a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.125rem;
-  }
-
-  #nav-bar {
-    margin: 0 auto;
-  }
-
-  .nav-btn a {
-    text-decoration: none;
-    color: var(--color-white);
-    background-color: var(--color-orange);
-    border-radius: 8px;
-    padding: 12px 30px;
-    font-weight: 600;
-    transition: all 0.3s;
-  }
-
-  .nav-btn a:hover {
-    background-color: #e07c1c;
-  }
-
-  .nav-btn a:first-child {
-    margin-right: 15px;
-  }
-
-  footer {
-    background-color: var(--color-cream);
-    padding: 50px 100px;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-
-  .title-footer {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: start;
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  .useful-link ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-  }
-
-  .navegation-footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-  }
-
-  .navegation-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navegation-footer ul li {
-    padding: 5px 0;
-    margin: 0;
-  }
-
-  .navegation-footer p {
-    padding: 5px 0;
-  }
-
-  .address {
-    width: 400px;
-  }
-
-  footer a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  footer a[href^="mailto:"] {
-    color: var(--color-black);
-    text-decoration: underline;
   }
 
   #logo-footer {
-    padding-top: 50px;
-    display: block;
-    width: 1030px;
-    margin: 0 auto;
+    width: 350px;
   }
 
-  .end p{
-    margin-top: 80px;
-    text-align: center;
+  footer .address {
+    width: 320px;
+  }
+}
+
+/* -------- Small (600–767px) -------- */
+@media (min-width: 600px) and (max-width: 767px) {
+  #nav-bar,
+  .nav-btn,
+  #fiap,
+  #logo {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    height: 90px;
+  }
+
+  .menu-icon {
+    display: flex;
+    max-width: 45px;
+    max-height: 45px;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+  }
+
+  .logos {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .logos #logo_mobile img {
+    max-width: 120px;
+    height: auto;
+  }
+  .logos #fiap_mobile {
+    margin-top: 14px;
+    max-width: 120px;
+  }
+
+  .separator {
+    width: 1px;
+    height: 45px;
+    background-color: var(--color-black);
+    margin: 0 10px;
+    margin-top: 14px;
+  }
+
+  .menu-mobile.active {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  #logo-footer {
+    width: 450px;
+  }
+}
+
+/* -------- Medium (768–991px) -------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-bar,
+  .nav-btn,
+  #fiap,
+  #logo {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    height: 100px;
+  }
+
+  .menu-icon {
+    display: flex;
+    max-width: 45px;
+    max-height: 45px;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+  }
+
+  .logos {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .logos #logo_mobile img {
+    width: 140px;
+    height: auto;
+  }
+  .logos #fiap_mobile {
+    margin-top: 18px;
+    width: 140px;
+  }
+
+  .separator {
+    width: 1px;
+    height: 65px;
+    background-color: var(--color-black);
+    margin: 0 10px;
+    margin-top: 5px;
+  }
+
+  .menu-mobile.active {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  #logo-footer {
+    width: 700px;
+  }
+}
+
+/* -------- Large (992–1299px) -------- */
+@media (min-width: 992px) and (max-width: 1299px) {
+  #nav-bar,
+  .nav-btn,
+  #fiap,
+  #logo {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    height: 100px;
+  }
+
+  .menu-icon {
+    display: flex;
+    max-width: 45px;
+    max-height: 45px;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+  }
+
+  .logos {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .logos #logo_mobile img {
+    width: 140px;
+    height: auto;
+  }
+  .logos #fiap_mobile {
+    margin-top: 18px;
+    width: 140px;
+  }
+
+  .separator {
+    width: 1px;
+    height: 65px;
+    background-color: var(--color-black);
+    margin: 0 10px;
+    margin-top: 5px;
+  }
+
+  .menu-mobile.active {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  #logo-footer {
+    width: 800px;
   }
 }
