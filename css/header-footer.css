@@ -253,6 +253,45 @@ footer a[href^="mailto:"] {
   }
 }
 
+@media (max-width: 599px) {
+  footer {
+    padding: 30px 20px;
+  }
+
+  #logo-footer {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .address {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .navegation-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .useful-link ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .end p {
+    margin-top: 40px;
+  }
+}
+
 /* -------- Small (600–767px) -------- */
 @media (min-width: 600px) and (max-width: 767px) {
   #nav-bar,
@@ -369,7 +408,7 @@ footer a[href^="mailto:"] {
   }
 
   #logo-footer {
-    width: 700px;
+    width: 570px;
   }
 }
 

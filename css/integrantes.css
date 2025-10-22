@@ -1,64 +1,357 @@
-@media (min-width: 1300px) {
-  body {
-    height: 3000px;
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 850px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero {
+  height: 770px;
+  background-color: var(--color-amber);
+  width: 100vw;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%, 0 100%);
+}
+
+#integrantes {
+  text-align: center;
+  padding: 100px 0;
+  font-family: var(--font-title);
+  color: var(--color-white);
+  font-size: 6rem;
+}
+
+.members {
+  width: 850px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 1;
+}
+
+.information-members {
+  margin-top: 300px;
+  margin-bottom: 300px;
+  display: flex;
+  gap: 105px;
+  place-content: center;
+  text-align: center;
+}
+
+.social-midia img {
+  height: 80px;
+  width: 80px;
+  margin: 0 10px;
+  transition: all 0.2s ease-in;
+}
+
+.social-midia img:hover {
+  transform: scale(1.03);
+}
+
+.name-member {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.rm {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 599px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
   }
 
-  .wrapper {
-    height: 770px;
-    position: relative;
+  #integrantes {
+    font-size: 4rem;
+    width: 350px;
+    margin: 0 auto;
   }
 
   .hero {
-    height: 770px;
-    background-color: var(--color-amber);
-
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%, 0 100%);
+    width: 100%;
+    overflow-x: clip;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+    height: 510px;
   }
 
-  h1 {
-    text-align: center;
-    padding: 100px 0;
-    font-family: var(--font-title);
-    color: var(--color-white);
-    font-size: 6rem;
-  }
-
-  .members {
-    width: 850px;
+  .wrapper .members {
+    width: 310px;
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
   }
 
   .information-members {
-    margin-top: 300px;
-    margin-bottom: 300px;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .information-members > div {
     display: flex;
-    gap: 105px;
-    place-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 15px;
+  }
+
+  .foto-pessoal {
+    width: 210px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .information-text-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social-midia {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
   }
 
   .social-midia img {
-    height: 80px;
-    width: 80px;
-    margin: 0 10px;
-    transition: all 0.2s ease-in;
-  }
-
-  .social-midia img:hover {
-    transform: scale(1.03);
+    width: 60px;
+    height: 60px;
   }
 
   .name-member {
-    font-size: 2rem;
+    margin-top: -20px;
+    font-size: 1.125rem;
     font-weight: 700;
-    padding: 15px 0;
+    margin-bottom: -20px;
   }
 
   .rm {
+    
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+/* -------- Small (600–767px) -------- */
+@media (min-width: 600px) and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  #integrantes {
+    font-size: 3.5rem;
+    width: 380px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+  }
+
+  .wrapper .members {
+    width: 500px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .information-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 100px 0;
+  }
+
+  .information-members > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .foto-pessoal {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .information-text-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .social-midia img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name-member {
+    font-size: 1.1rem;
+  }
+
+  .rm {
+    font-size: 1rem;
+  }
+}
+
+/* -------- Medium (768–991px) -------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  #integrantes {
+    font-size: 4.5rem;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: 820px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+  }
+
+  .wrapper .members {
+    width: 650px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .information-members {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 140px;
+    margin: 120px 0;
+  }
+
+  .information-members > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+  }
+
+  .foto-pessoal {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .information-text-member {
+    gap: 10px;
+  }
+
+  .social-midia {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .social-midia img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name-member {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .rm {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  #integrantes {
+    font-size: 5rem;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: 870px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+  }
+
+  .wrapper .members {
+    width: 750px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .information-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 100px 0;
+  }
+
+  .information-members > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .foto-pessoal {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .information-text-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social-midia img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name-member span{
     font-size: 1.5rem;
+  }
+
+  .rm p{
+    font-size: 1.125rem;
   }
 }
