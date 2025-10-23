@@ -1,9 +1,9 @@
-@media (min-width: 1300px) {
-  main {
+
+  .main-faq {
     margin: 110px 100px;
   }
 
-  h1 {
+  #perguntas-frequentes {
     text-align: center;
     font-size: 3rem;
     font-family: var(--font-title);
@@ -118,5 +118,170 @@
     margin-top: 20px;
     text-align: center;
     place-content: center;
+  }
+
+
+@media (max-width: 599px){
+  .main-faq {
+    margin: 100px 20px;
+  }
+
+  #perguntas-frequentes {
+    font-size: 3rem;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .dentinho-faq {
+    order: 1;
+  }
+
+  .contact img {
+    max-width: 350px;
+    height: 233px;
+    object-fit: contain;
+  }
+
+  .contact div {
+    width: 350px;
+  }
+
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact a {
+    width: 260px;
+    height: 37px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .main-faq {
+    margin: 100px 20px;
+  }
+
+  #perguntas-frequentes {
+    font-size: 3rem;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .dentinho-faq {
+    order: 1;
+  }
+
+  .contact img {
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 -20px;
+  }
+
+  .contact div {
+    width: 350px;
+  }
+
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact a {
+    width: 260px;
+    height: 37px;
+  }
+}
+
+/* -------- Medium (768–991px) -------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-faq {
+    margin: 100px 100px;
+  }
+
+  #perguntas-frequentes {
+    font-size: 3rem;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .dentinho-faq {
+    order: 1;
+  }
+
+  .contact img {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .contact div {
+    width: 568px;
+    margin: 0 100px;
+  }
+
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact a {
+    width: 260px;
+    height: 37px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .main-faq {
+    margin: 100px 100px;
+  }
+
+  #perguntas-frequentes {
+    font-size: 3rem;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .contact img {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
+  }
+
+  .contact div {
+    width: 300px;
+    margin: 0;
+  }
+
+  .contact p {
+    width: 500px;
+  }
+
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact a {
+    width: 260px;
+    height: 37px;
   }
 }
