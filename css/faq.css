@@ -1,127 +1,125 @@
+.main-faq {
+  margin: 110px 100px;
+}
 
-  .main-faq {
-    margin: 110px 100px;
-  }
+#perguntas-frequentes {
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--font-title);
+  margin-bottom: 110px;
+  font-weight: bold;
+}
 
-  #perguntas-frequentes {
-    text-align: center;
-    font-size: 3rem;
-    font-family: var(--font-title);
-    margin-bottom: 110px;
-    font-weight: bold;
-  }
+.container-faq h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+}
 
-  .container-faq h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    display: flex;
-    gap: 60px;
-    margin-bottom: 60px;
-  }
+.container-faq h2::before,
+.container-faq h2::after {
+  content: "";
+  flex: 1;
+  height: 5px;
+  background-color: var(--color-darkgreen);
+  border-radius: 10px;
+  margin-top: 30px;
+}
 
-  .container-faq h2::before,
-  .container-faq h2::after {
-    content: "";
-    flex: 1;
-    height: 5px;
-    background-color: var(--color-darkgreen);
-    border-radius: 10px;
-    margin-top: 30px;
-  }
+.container-faq details {
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 30px 0;
+}
 
-  .container-faq details {
-    border-top: 1px solid rgba(0, 0, 0, 0.7);
-    padding: 30px 0;
-  }
+.container-faq details:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  margin-bottom: 120px;
+}
 
-  .container-faq details:last-child {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-    margin-bottom: 120px;
-  }
+.container-faq details summary {
+  font-weight: bold;
+  color: black;
+}
 
-  .container-faq details summary {
-    font-weight: bold;
-    color: black;
-  }
+.container-faq details p {
+  padding: 15px 0 0 0;
+}
 
-  .container-faq details p {
-    padding: 15px 0 0 0;
-  }
+.container-faq summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 25px;
+}
 
-  .container-faq summary {
-    list-style: none;
-    cursor: pointer;
-    position: relative;
-    padding-right: 25px;
-  }
+.container-faq summary::-webkit-details-marker {
+  display: none;
+}
 
-  .container-faq summary::-webkit-details-marker {
-    display: none;
-  }
+.container-faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
 
-  .container-faq summary::after {
-    content: "+";
-    position: absolute;
-    right: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-  }
+.container-faq details[open] summary::after {
+  content: "–";
+}
 
-  .container-faq details[open] summary::after {
-    content: "–";
-  }
+/* mais dúvidas */
 
-  /* mais dúvidas */
+.contact {
+  margin: 0 100px;
+  display: flex;
+  gap: 80px;
+  place-content: center;
+}
 
-  .contact {
-    margin: 0 100px;
-    display: flex;
-    gap: 80px;
-    place-content: center;
-  }
+.contact img {
+  min-width: 600px;
+  max-width: 900px;
+  object-fit: cover;
+}
 
-  .contact img {
-    min-width: 600px;
-    max-width: 900px;
-    object-fit: cover;
-  }
+.contact div {
+  place-content: center;
+  width: 560px;
+}
 
-  .contact div {
-    place-content: center;
-    width: 560px;
-  }
+.contact div span {
+  font-size: 1.25rem;
+}
 
-  .contact div span {
-    font-size: 1.25rem;
-  }
+.contact h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
 
-  .contact h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 15px 0;
-  }
+.contact p {
+  font-size: 1.125rem;
+}
 
-  .contact p {
-    font-size: 1.125rem;
-  }
+.contact a {
+  text-decoration: none;
+  color: var(--color-white);
+  width: 560px;
+  height: 40px;
+  background-color: var(--color-orange);
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  place-content: center;
+}
 
-  .contact a {
-    text-decoration: none;
-    color: var(--color-white);
-    width: 560px;
-    height: 40px;
-    background-color: var(--color-orange);
-    display: inline-block;
-    border-radius: 8px;
-    margin-top: 20px;
-    text-align: center;
-    place-content: center;
-  }
-
-
-@media (max-width: 599px){
+@media (max-width: 599px) {
   .main-faq {
     margin: 100px 20px;
   }
@@ -131,6 +129,16 @@
     max-width: 320px;
     margin: 0 auto;
     margin-bottom: 100px;
+  }
+
+  .container-faq h2 {
+    text-align: center;
+    place-content: center;
+  }
+
+  .container-faq h2::before,
+  .container-faq h2::after {
+    display: none;
   }
 
   .contact {
@@ -143,13 +151,17 @@
   }
 
   .contact img {
-    max-width: 350px;
-    height: 233px;
+    min-width: auto;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
   }
 
   .contact div {
-    width: 350px;
+    max-width: 350px;
   }
 
   .contact h3 {
@@ -184,10 +196,13 @@
   }
 
   .contact img {
-    max-width: 400px;
+    min-width: auto;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
-    margin: 0 -20px;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
   }
 
   .contact div {
@@ -207,7 +222,7 @@
 /* -------- Medium (768–991px) -------- */
 @media (min-width: 768px) and (max-width: 991px) {
   .main-faq {
-    margin: 100px 100px;
+    margin: 100px 80px;
   }
 
   #perguntas-frequentes {
@@ -227,10 +242,13 @@
   }
 
   .contact img {
-    max-width: 600px;
+    min-width: auto;
+    max-width: 80%;
     height: auto;
     object-fit: contain;
+    padding: 0;
     margin: 0 auto;
+    display: block;
   }
 
   .contact div {
@@ -250,38 +268,68 @@
 
 @media (min-width: 992px) and (max-width: 1299px) {
   .main-faq {
-    margin: 100px 100px;
+    margin: 100px 60px;
   }
 
   #perguntas-frequentes {
-    font-size: 3rem;
-    max-width: 320px;
-    margin: 0 auto;
-    margin-bottom: 100px;
+    font-size: 2.8rem;
+    max-width: 400px;
+    margin: 0 auto 80px auto;
+    text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin: 0 60px;
   }
 
   .contact img {
-    max-width: 600px;
+    min-width: auto;
+    max-width: 700px;
     height: auto;
     object-fit: contain;
-    z-index: -1;
+    padding: 0;
+    margin: 50px 0 0 -80px;
+    display: block;
   }
 
   .contact div {
-    width: 300px;
-    margin: 0;
-  }
-
-  .contact p {
-    width: 500px;
+    max-width: 480px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
   }
 
   .contact h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .contact p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
   .contact a {
-    width: 260px;
-    height: 37px;
+    width: 220px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+
+  .contact a:hover {
+    background-color: #e57e0f; 
   }
 }
