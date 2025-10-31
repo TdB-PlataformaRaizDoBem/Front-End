@@ -32,18 +32,46 @@
       </ul>
     </nav>
 
-
     <nav class="nav-btn" aria-label="Ações rápidas">
       <a href="seja-voluntario.html" class="cta">Seja Voluntário</a>
       <a href="login.html" class="cta">Entrar</a>
     </nav>
+
+    <!-- Menu Mobile -->
+    <div class="logos">
+      <a id="logo_mobile" href="index.html" aria-label="Página inicial - Turma do Bem">
+        <img src="./assents/svgs/TDB_logo.svg" alt="Turma do Bem">
+      </a>
+      <span class="separator"></span>
+      <img id="fiap_mobile" src="./assents/svgs/fiap.svg" alt="Logo Fiap">
+    </div>
+
+    <button class="menu-icon" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+      <img src="./assents/svgs/menu_hamburguer.svg" alt="Menu">
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Menu móvel">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="./integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+      <div class="nav-btn-mobile">
+        <a href="seja-voluntario.html" class="cta">Seja Voluntário</a>
+        <a href="login.html" class="cta">Entrar</a>
+      </div>
+    </nav>
   </header>
 
-  <div class="top-section">
+  <div class="top-section-contact">
     <h1>Inclusão Social Através do Sorriso</h1>
 
     <img src="./assents/img/dentinhoContato.png" alt="mascote dentinho analisando uma aba web com lupa e com uma expressão de dúvidas">
   </div>
+
 
   <section class="forms-contact">
     <h2>Precisa de Ajuda ou Tem Dúvidas? Estamos Aqui para Você!</h2>
@@ -54,7 +82,7 @@
     </div>
 
     <form id="form-ajuda" class="formulario">
-      <!-- ETAPA 1 -->
+
       <div class="form-step active" id="step1">
         <div class="input-solo">
           <label for="txtNome">Nome Completo:</label>
@@ -213,6 +241,7 @@
     </form>
   </section>
 
+
   <article class="info-contact" aria-label="informações-de-contato">
     <h3>Turma do Bem</h3>
 
@@ -220,7 +249,7 @@
       <div class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29249.99384702763!2d-46.631244!3d-23.595393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bcd437acbf5%3A0xb3a7db8e507d85c4!2sR.%20Sousa%20Ramos%2C%20148%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004120-080!5e0!3m2!1spt-BR!2sbr!4v1759970130215!5m2!1spt-BR!2sbr" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
+      <!--
       <div class="info-canal">
         <span>ENDEREÇO</span>
         <p>Rua Maurício Francisco Klabin, 449 Vila Mariana, São Paulo - SP, 04120-020</p>
@@ -312,8 +341,9 @@
       <p>© 2025 Todos os direitos reservados</p>
     </div>
   </footer>
+  -->
 
-  <script src="./js/formsContact.js"></script>
+      <script src="./js/global.js"></script>
 </body>
 
 </html>
