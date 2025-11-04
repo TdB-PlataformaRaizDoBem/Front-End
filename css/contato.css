@@ -254,7 +254,7 @@ button:hover {
   }
 
   .info-contact {
-    margin: 56px 20px;
+    margin: 56px 0px;
     width: 100%;
   }
 
@@ -267,7 +267,6 @@ button:hover {
   .info-contact iframe {
     width: 320px;
     height: 300px;
-    margin: 0 0;
   }
 
   .info-contact section {
@@ -275,6 +274,191 @@ button:hover {
   }
 }
 
-* {
-  outline: 1px solid red;
+@media (min-width: 600px) and (max-width: 767px) {
+  .top-section-contact {
+    height: 400px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .top-section-contact h1 {
+    font-size: 2.5rem;
+    width: 450px;
+    margin-bottom: 40px;
+  }
+
+  .top-section-contact img {
+    display: none;
+  }
+
+  .top-section-contact::after {
+    bottom: -20px;
+    height: 80px;
+  }
+
+  .forms-contact h2 {
+    font-size: 2.5rem;
+    width: 450px;
+    margin: 80px 0;
+  }
+
+  .formulario {
+    width: 450px;
+    padding: 25px;
+  }
+
+  .form-step.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-forms button {
+    width: 320px;
+    margin: 20px;
+    margin-left: 25%;
+  }
+
+  .info-contact {
+    width: 450px;
+    margin: 80px auto;
+  }
+
+  .info-contact h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .info-contact iframe {
+    width: 100%;
+    height: 350px;
+  }
+
+  .info-contact section {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-section-contact {
+    height: 500px;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .top-section-contact h1 {
+    font-size: 2.5rem;
+    width: 600px;
+    margin-bottom: 60px;
+    z-index: 1;
+    margin-left: 40px;
+  }
+
+  .top-section-contact img {
+    max-width: 400px;
+    margin-bottom: -50px;
+    z-index: 0;
+  }
+
+  .top-section-contact::after {
+    height: 100px;
+  }
+
+  .forms-contact h2 {
+    font-size: 2.8rem;
+    width: 600px;
+    margin: 100px 0;
+  }
+
+  .formulario {
+    width: 600px;
+    padding: 30px;
+  }
+
+  .form-step.active {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-forms button {
+    width: 350px;
+    margin-left: 25%;
+  }
+
+  .info-contact {
+    width: 650px;
+    margin: 100px auto;
+  }
+
+  .info-contact h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .info-contact iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .info-contact section {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .top-section-contact {
+    height: 550px;
+    gap: 70px;
+  }
+
+  .top-section-contact h1 {
+    font-size: 3.5rem;
+    width: 520px;
+    margin-bottom: 80px;
+  }
+
+  .top-section-contact img {
+    max-width: 500px;
+    margin-bottom: 80px;
+  }
+
+  .forms-contact h2 {
+    font-size: 3rem;
+    width: 700px;
+    margin: 120px 0;
+  }
+
+  .formulario {
+    width: 720px;
+    padding: 35px;
+  }
+
+  .form-step.active {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-forms button {
+    width: 340px;
+  }
+
+  .info-contact {
+    width: 800px;
+    margin: 120px auto;
+  }
+
+  .info-contact h3 {
+    font-size: 2.8rem;
+  }
+
+  .info-contact iframe {
+    width: 100%;
+    height: 420px;
+  }
+
+  .info-contact section {
+    gap: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
