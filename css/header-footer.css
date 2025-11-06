@@ -249,26 +249,17 @@ footer a[href^="mailto:"] {
   }
 
   #logo-footer {
-    width: 350px;
-  }
-
-  footer .address {
-    width: 320px;
-  }
-}
-
-@media (max-width: 599px) {
-  footer {
-    padding: 30px 20px;
-  }
-
-  #logo-footer {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
   }
 
-  .footer-container {
+  footer .address {
+    width: 320px;
+    padding: 30px 20px;
+  }
+
+   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
