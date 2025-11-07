@@ -42,7 +42,7 @@
     </main>
 
     <article id="form" aria-label="formulário-para-cadastro">
-      <form action="" class="form-voluntario">
+      <form action="" id="form-voluntario" class="form-voluntario" novalidate>
         <div class="personal_information" aria-labelledby="informacoes-pessoais">
           <h2 id="informacoes-pessoais">INFORMAÇÕES PESSOAIS</h2>
 
@@ -59,30 +59,30 @@
 
           <div class="input-duo">
             <div class="group">
-              <label for="DataNascimento">Data de Nascimento</label>
+              <label for="DataNascimento">Data de Nascimento:</label>
               <input type="date" id="DataNascimento" name="DataNascimento" required>
             </div>
             <div class="group">
               <label for="txtCPF">CPF: (Apenas os números)</label>
-              <input type="text" name="txtCPF" id="txtCPF" placeholder="Digite apenas os números do CPF " required>
+              <input type="text" id="txtCPF" name="txtCPF" placeholder="000.000.000-00" maxlength="14" oninput="mascara('cpf', this)" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
 
           <div class="input-duo">
             <div class="group">
               <label for="txtRG">RG: (Apenas números)</label>
-              <input type="text" id="txtRG" name="txtRG" placeholder="Digite seu RG:" required>
+              <input type="text" id="txtRG" name="txtRG" placeholder="Digite seu RG" onkeypress="return somenteNumeros(event)" required>
             </div>
             <div class="group">
               <label for="txtEmail">Email:</label>
-              <input type="email" id="txtEmail" name="txtEmail" placeholder="Digite seu email:" required>
+              <input type="email" id="txtEmail" name="txtEmail" placeholder="Digite seu email" required>
             </div>
           </div>
 
           <div class="input-duo">
             <div class="group">
-              <label for="txtRG">RG: (Apenas números)</label>
-              <input type="text" id="txtRG" name="txtRG" placeholder="Digite seu RG:" required>
+              <label for="celular">Celular:</label>
+              <input type="text" id="celular" name="celular" placeholder="(11) 91111-1111" maxlength="15" oninput="mascara('celular', this)" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@
             </div>
             <div class="group">
               <label for="txtNumeroResidencial">Número:</label>
-              <input type="text" id="txtNumeroResidencial" name="txtNumeroResidencial" placeholder="Número" required>
+              <input type="text" id="txtNumeroResidencial" name="txtNumeroResidencial" placeholder="Número" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
 
@@ -119,28 +119,28 @@
             </div>
             <div class="group">
               <label for="txtCEPResidencial">CEP:</label>
-              <input type="text" id="txtCEPResidencial" name="txtCEPResidencial" placeholder="00000-000" required>
+              <input type="text" id="txtCEPResidencial" name="txtCEPResidencial" placeholder="00000-000" maxlength="9" oninput="mascara('cep', this)" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
 
           <div class="input-duo">
             <div class="group">
-              <label for="selPais">
-                <select name="selPais" id="selPais" required>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Brasil">Brasil</option>
-                  <option value="Bolivia">Bolívia</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Colombia">Colômbia</option>
-                  <option value="Equador">Equador</option>
-                  <option value="Mexico">México</option>
-                  <option value="Uruguai">Uruguai</option>
-                  <option value="Panama">Panamá</option>
-                  <option value="Paraguai">Paraguai</option>
-                  <option value="Peru">Peru</option>
-                  <option value="Portugal">Portugal</option>
-                </select>
-              </label>
+              <label for="selPais">País:</label>
+              <select name="selPais" id="selPais" required>
+                <option value="" disabled selected>Selecione o país</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolívia</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colômbia</option>
+                <option value="Equador">Equador</option>
+                <option value="Mexico">México</option>
+                <option value="Uruguai">Uruguai</option>
+                <option value="Panama">Panamá</option>
+                <option value="Paraguai">Paraguai</option>
+                <option value="Peru">Peru</option>
+                <option value="Portugal">Portugal</option>
+              </select>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@
             </div>
             <div class="group">
               <label for="txtNumeroClinica">Número:</label>
-              <input type="text" id="txtNumeroClinica" name="txtNumeroClinica" placeholder="Número" required>
+              <input type="text" id="txtNumeroClinica" name="txtNumeroClinica" placeholder="Número" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
 
@@ -177,14 +177,14 @@
             </div>
             <div class="group">
               <label for="txtCEPClinica">CEP:</label>
-              <input type="text" id="txtCEPClinica" name="txtCEPClinica" placeholder="00000-000" required>
+              <input type="text" id="txtCEPClinica" name="txtCEPClinica" placeholder="00000-000" maxlength="9" oninput="mascara('cep', this)" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
 
           <div class="input-duo">
             <div class="group">
               <label for="txtTelefoneComercial">Telefone Comercial:</label>
-              <input type="tel" id="txtTelefoneComercial" name="txtTelefoneComercial" placeholder="(XX) XXXX-XXXX" required>
+              <input type="text" id="txtTelefoneComercial" name="txtTelefoneComercial" placeholder="(11) 1234-5678" maxlength="14" oninput="mascara('celular', this)" onkeypress="return somenteNumeros(event)" required>
             </div>
           </div>
         </div>
@@ -213,6 +213,7 @@
 
         <div class="volunteer_preferences" aria-labelledby="preferencias-voluntariado">
           <h2 id="preferencias-voluntariado">PREFERÊNCIAS DE VOLUNTARIADO</h2>
+
           <div class="input-duo">
             <div class="group">
               <label for="tipoAtuacao">Você deseja:</label>
@@ -331,6 +332,8 @@
       <p>© 2025 Todos os direitos reservados</p>
     </div>
   </footer>
+
+  <script src="./js/validacaoVoluntario.js"></script>
 </body>
 
 </html>
