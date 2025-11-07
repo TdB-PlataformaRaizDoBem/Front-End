@@ -206,3 +206,199 @@ form {
   color: var(--color-white);
   box-shadow: none;
 }
+
+@media screen and (max-width: 991px) {
+  .container {
+    height: calc(100vh - 20px);
+  }
+
+  .form-box {
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+  }
+
+  .container.active .form-box {
+    right: 0;
+    bottom: 30%;
+  }
+
+  .toggle-box::before {
+    left: 0;
+    top: -270%;
+    width: 100%;
+    height: 300%;
+    border-radius: 20vw;
+  }
+
+  .container.active .toggle-box::before {
+    top: 70%;
+    left: 0;
+  }
+
+  .toggle-panel {
+    width: 100%;
+    height: 30%;
+  }
+
+  .toggle-panel.toggle-left {
+    top: 0;
+  }
+
+  .container.active .toggle-panel.toggle-left {
+    left: 0;
+    top: -30%;
+  }
+
+  .toggle-panel.toggle-right {
+    right: 0;
+    bottom: -30%;
+  }
+
+  .container.active .toggle-panel.toggle-panel.toggle-right {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .form-box {
+    width: 100%;
+    height: 65%;
+    padding: 25px;
+    bottom: 0;
+  }
+
+  .container.active .form-box {
+    bottom: 35%;
+  }
+
+  .toggle-box::before {
+    left: 0;
+    top: -220%;
+    width: 100%;
+    height: 260%;
+    border-radius: 30vw;
+  }
+
+  .container.active .toggle-box::before {
+    top: 65%;
+  }
+
+  .toggle-panel {
+    width: 100%;
+    height: 35%;
+  }
+
+  .toggle-panel p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .btn {
+    height: 42px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 600px até 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .form-box {
+    width: 100%;
+    height: 60%;
+    padding: 30px;
+  }
+
+  .container.active .form-box {
+    bottom: 40%;
+  }
+
+  .toggle-box::before {
+    top: -240%;
+    height: 280%;
+    border-radius: 25vw;
+  }
+
+  .container.active .toggle-box::before {
+    top: 60%;
+  }
+
+  .toggle-panel {
+    height: 40%;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+}
+
+/* 768px até 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .form-box {
+    width: 100%;
+    height: 60%;
+    padding: 35px;
+  }
+
+  .container.active .form-box {
+    bottom: 40%;
+  }
+
+  .toggle-box::before {
+    top: -230%;
+    height: 260%;
+    border-radius: 22vw;
+  }
+
+  .container.active .toggle-box::before {
+    top: 60%;
+  }
+
+  .toggle-panel {
+    height: 30%;
+  }
+}
+
+/* 992px até 1299px */
+@media (min-width: 992px) and (max-width: 1299px) {
+  .container {
+    width: 780px;
+    height: 550px;
+  }
+
+  .form-box {
+    width: 50%;
+    padding: 35px;
+  }
+
+  .toggle-panel {
+    padding: 0 40px;
+  }
+
+  .toggle-box::before {
+    border-radius: 130px;
+  }
+} 

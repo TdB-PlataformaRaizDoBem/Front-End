@@ -198,6 +198,7 @@ nav[aria-label="primaria"] a:hover {
   flex-direction: column;
   margin-top: 20px;
   gap: 10px;
+  margin-left: 20px;
 }
 
 #asidebar.collapsed .perfil .btn-close {
