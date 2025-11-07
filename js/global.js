@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("#nav-bar a, .menu-mobile a");
   const currentPage = window.location.pathname.split("/").pop();
 
-  links.forEach(link => {
+  links.forEach((link) => {
     const href = link.getAttribute("href");
 
     // Garante que funcione mesmo com caminhos relativos ou ./ no início
@@ -19,6 +19,43 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("current-page");
       link.setAttribute("aria-current", "page");
     }
+  });
+});
+
+//interação de doação para futura api
+document.addEventListener("DOMContentLoaded", () => {
+  const tipoBotoes = document.querySelectorAll("[data-type]");
+  const valorBotoes = document.querySelectorAll("[data-value]");
+  const botaoDoar = document.querySelector(".btn-doar");
+
+  let tipoSelecionado = null;
+  let valorSelecionado = null;
+
+  function handleSelection(botoes, tipo) {
+    botoes.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Remove destaque anterior
+        botoes.forEach((b) => b.classList.remove("selected-donate"));
+        // Adiciona destaque ao botão clicado
+        btn.classList.add("selected-donate");
+
+        if (tipo === "tipo") tipoSelecionado = btn.dataset.type;
+        else valorSelecionado = btn.dataset.value;
+      });
+    });
+  }
+
+  handleSelection(tipoBotoes, "tipo");
+  handleSelection(valorBotoes, "valor");
+
+  botaoDoar.addEventListener("click", () => {
+    if (!tipoSelecionado || !valorSelecionado) {
+      alert("Por favor, selecione o tipo e o valor da doação.");
+      return;
+    }
+
+    alert(`Tipo: ${tipoSelecionado}\nValor: R$ ${valorSelecionado}`);
+    // Aqui entrará a integração com a API de pagamento
   });
 });
 

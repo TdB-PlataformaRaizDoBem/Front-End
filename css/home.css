@@ -122,6 +122,14 @@
   cursor: pointer;
 }
 
+.donate button.selected-donate {
+  background-color: var(--color-orange);
+  opacity: 0.85;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+
 /*--Tdb-Apresentação-Rápida--*/
 
 .content {
@@ -494,7 +502,7 @@
   }
 
   .card-stats div {
-    width: 120px;
+    width: 100px;
     height: 120px;
     padding: 10px;
   }
@@ -515,10 +523,12 @@
 
   #documentary iframe {
     width: 100%;
+    height: 100%;
   }
 
   #review {
     font-size: 2.5rem;
+    margin: -60px auto 50px auto;
   }
 
   .btn-next {
@@ -547,20 +557,26 @@
   #cta {
     width: 90%;
     gap: 30px;
+    display: flex;
+    place-items: center;
+    place-content: center;
   }
 
   #cta h4 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
   }
 
   #cta a {
     font-size: 0.9rem;
     padding: 10px 35px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 45px;
   }
 
   #cta .cta-img {
-    width: 150px;
-    height: 150px;
+    display: none;
   }
 }
 
@@ -729,7 +745,7 @@
     font-size: 0.9rem;
   }
 
-   #cta {
+  #cta {
     width: 90%;
   }
 
@@ -876,7 +892,7 @@
     font-size: 1rem;
   }
 
-   #cta {
+  #cta {
     width: 90%;
   }
 
@@ -966,7 +982,7 @@
     font-size: 1rem;
   }
 
-   #cta {
+  #cta {
     width: 90%;
   }
 

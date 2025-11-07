@@ -40,18 +40,16 @@
             <img src="./assents/svgs/icon-park_to-left.svg" alt="Fechar Sidebar">
           </button>
         </div>
-
       </div>
-
 
       <search>
         <form role="search">
-          <img src="./assents/svgs/search.svg">
+          <img src="./assents/svgs/search.svg" alt="">
           <input type="search" id="search" name="search" placeholder="Pesquisar..." aria-label="Pesquisar" />
         </form>
       </search>
 
-      <nav aria-label="primaria">
+      <nav aria-label="primaria" class="nav-plataform">
         <ul>
           <li>
             <a href="homeAdmin.html">
@@ -76,7 +74,7 @@
 
           <li>
             <a href="">
-              <img src="./assents/svgs/dentista.svg" alt="" aria-hidden=true">
+              <img src="./assents/svgs/dentista.svg" alt="" aria-hidden="true">
               <span>Dentistas</span>
             </a>
           </li>
@@ -97,14 +95,14 @@
 
           <li>
             <a href="">
-              <img src="./assents/svgs/comunicacao.svg" alt="" aria-hidden="">
+              <img src="./assents/svgs/comunicacao.svg" alt="" aria-hidden="true">
               <span>Comunicacao</span>
             </a>
           </li>
 
           <li>
             <a href="">
-              <img src="./assents/svgs/relatorio.svg" alt="" aria-hidden="">
+              <img src="./assents/svgs/relatorio.svg" alt="" aria-hidden="true">
               <span>Relatórios</span>
             </a>
           </li>
@@ -132,13 +130,12 @@
         </ul>
       </div>
     </aside>
-
   </header>
 
   <nav id="menu-bottom-mobile">
     <ul>
       <li>
-        <a href="homeCoordenador.html">
+        <a href="homeAdmin.html">
           <img src="./assents/svgs/painelGeral.svg" alt="" aria-hidden="true" />
         </a>
       </li>
@@ -170,17 +167,60 @@
   </nav>
 
   <main id="wrapper-plataform">
-    <div>
-      <p>Conteúdo</p>
+    <!-- Painel Geral do Admin -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/painelGeral.svg" alt="" aria-hidden="true">
+      <h3>Painel Geral</h3>
+      <p>Visão geral da plataforma com acesso rápido a contas, solicitações, comunicação, relatórios e configurações globais.</p>
     </div>
-    <div>
-      <p>Conteúdo</p>
+
+    <!-- Solicitações -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/pedidosAjuda.svg" alt="" aria-hidden="true">
+      <h3>Solicitações</h3>
+      <p>Acessar todas as solicitações enviadas por coordenadores e dentistas voluntários, podendo aprovar, recusar ou responder demandas.</p>
     </div>
-    <div>
-      <p>Conteúdo</p>
+
+    <!-- Coordenadores -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/Coordenadores.svg" alt="" aria-hidden="true">
+      <h3>Coordenadores</h3>
+      <p>Criar, editar e apagar contas de coordenadores, visualizar dados não sensíveis e histórico das contas.</p>
     </div>
-    <div>
-      <p>Conteúdo</p>
+
+    <!-- Dentistas -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/dentista.svg" alt="" aria-hidden="true">
+      <h3>Dentistas</h3>
+      <p>Gerenciar contas de dentistas voluntários: criar, editar, apagar e visualizar dados não sensíveis.</p>
+    </div>
+
+    <!-- Beneficiários -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/beneficiario.svg" alt="" aria-hidden="true">
+      <h3>Beneficiários</h3>
+      <p>Acessar e gerenciar contas de beneficiários, podendo editar informações não sensíveis ou apagar registros, garantindo integridade dos dados.</p>
+    </div>
+
+    <!-- Configurações -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/config.svg" alt="" aria-hidden="true">
+      <h3>Configurações</h3>
+      <p>Ajustes globais da plataforma, parâmetros e opções que afetam todo o sistema.</p>
+    </div>
+
+    <!-- Comunicação -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/comunicacao.svg" alt="" aria-hidden="true">
+      <h3>Comunicação</h3>
+      <p>Dashboard para responder mensagens via WhatsApp de coordenadores, dentistas, beneficiários e outros contatos como patrocinadores.</p>
+    </div>
+
+    <!-- Relatórios -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/relatorio.svg" alt="" aria-hidden="true">
+      <h3>Relatórios</h3>
+      <p>Visualização de dashboards globais com opção de exportação para análise de impacto e transparência com patrocinadores e doadores.</p>
     </div>
   </main>
 

@@ -46,7 +46,6 @@ Front-End/
     - `homeCoordenador.html` — tela inicial pós login para os coordenadores  
     - `homeAdmin.html` — tela inicial pós login para os Administradores  
     - `homeDentista.html` — tela inicial pós login para os dentistas voluntários  
-    - `homeBeneficiario.html` — tela inicial pós login para os beneficiários do programa TdB   
 
     **Diretórios internos:**
     - **css/** → estilos globais e páginas específicas  

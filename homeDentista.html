@@ -31,6 +31,7 @@
             <p>dentista@gmail.com</p>
           </div>
         </div>
+
         <div class="btn-close">
           <button id="toggleAside">
             <img src="./assents/svgs/icon-park_to-left.svg" alt="Fechar Sidebar">
@@ -39,18 +40,16 @@
             <img src="./assents/svgs/icon-park_to-left.svg" alt="Fechar Sidebar">
           </button>
         </div>
-
       </div>
-
 
       <search>
         <form role="search">
-          <img src="./assents/svgs/search.svg">
+          <img src="./assents/svgs/search.svg" alt="">
           <input type="search" id="search" name="search" placeholder="Pesquisar..." aria-label="Pesquisar" />
         </form>
       </search>
 
-      <nav aria-label="primaria">
+      <nav aria-label="primaria" class="nav-plataform">
         <ul>
           <li>
             <a href="homeDentista.html">
@@ -75,7 +74,7 @@
 
           <li>
             <a href="">
-              <img src="./assents/svgs/perfilProfissional.svg" alt="" aria-hidden=true">
+              <img src="./assents/svgs/perfilProfissional.svg" alt="" aria-hidden="true">
               <span>Perfil Profissional</span>
             </a>
           </li>
@@ -117,20 +116,19 @@
         </ul>
       </div>
     </aside>
-
   </header>
 
   <nav id="menu-bottom-mobile">
     <ul>
       <li>
-        <a href="homeCoordenador.html">
+        <a href="homeDentista.html">
           <img src="./assents/svgs/painelGeral.svg" alt="" aria-hidden="true" />
         </a>
       </li>
 
       <li>
         <a href="">
-          <img src="./assents/svgs/pedidosAjuda.svg" alt="" aria-hidden="true">
+          <img src="./assents/svgs/pacientes.svg" alt="" aria-hidden="true">
         </a>
       </li>
 
@@ -155,17 +153,46 @@
   </nav>
 
   <main id="wrapper-plataform">
-    <div>
-      <p>Conteúdo</p>
+    <!-- Painel do Dentista -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/painelGeral.svg" alt="" aria-hidden="true">
+      <h3>Painel do Dentista</h3>
+      <p>Visão geral da plataforma, acesso rápido a pacientes, atendimentos, solicitações e mensagens.</p>
     </div>
-    <div>
-      <p>Conteúdo</p>
+
+    <!-- Meus Pacientes -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/pacientes.svg" alt="" aria-hidden="true">
+      <h3>Meus Pacientes</h3>
+      <p>Lista dos pacientes atendidos pelo dentista, com informações como nome, idade, sexo e histórico resumido.</p>
     </div>
-    <div>
-      <p>Conteúdo</p>
+
+    <!-- Registrar Atendimento -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/registroAtendimento.svg" alt="" aria-hidden="true">
+      <h3>Registrar Atendimento</h3>
+      <p>Área para preencher informações sobre cada atendimento, triagens e observações pós-consulta.</p>
     </div>
-    <div>
-      <p>Conteúdo</p>
+
+    <!-- Perfil Profissional -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/perfilProfissional.svg" alt="" aria-hidden="true">
+      <h3>Perfil Profissional</h3>
+      <p>Editar dados profissionais como endereço do consultório, especializações, contatos e outras configurações pessoais.</p>
+    </div>
+
+    <!-- Solicitações -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/pedidosAjuda.svg" alt="" aria-hidden="true">
+      <h3>Solicitações</h3>
+      <p>Solicitar pausas, cancelamentos ou alterações no voluntariado. Dentistas coordenadores podem cadastrar instituições/escolas para triagens, e receber solicitações de pedido de ajuda.</p>
+    </div>
+
+    <!-- Mensagens / Suporte -->
+    <div class="page-placeholder">
+      <img src="./assents/svgs/comunicacao.svg" alt="" aria-hidden="true">
+      <h3>Mensagens / Suporte</h3>
+      <p>Entrar em contato com o suporte via WhatsApp ou reportar bugs diretamente na plataforma.</p>
     </div>
   </main>
 

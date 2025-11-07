@@ -388,6 +388,7 @@ body.aside-collapsed #wrapper-plataform {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .nav-plataform a img {
